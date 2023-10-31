@@ -1,3 +1,3 @@
 # cookie-stand
 
-I have a deficalty getting my pages connected.
+I have a defficulty getting my pages connected.
