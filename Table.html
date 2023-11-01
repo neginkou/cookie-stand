@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salmon Cookie Stand</title>
+</head>
+<body>
+    <h1>Salmon Cookie Stand Sales</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>6:00am</th>
+                <th>7:00am</th>
+                <th>8:00am</th>
+                <th>9:00am</th>
+                <th>10:00am</th>
+                <th>11:00am</th>
+                <th>12:00pm</th>
+                <th>1:00pm</th>
+                <th>2:00pm</th>
+                <th>3:00pm</th>
+                <th>4:00pm</th>
+                <th>5:00pm</th>
+                <th>6:00pm</th>
+                <th>7:00pm</th>
+                <th>Daily Location Total</th>
+            </tr>
+        </thead>
+        <tbody id="sales-table-body">
+        </tbody>
+        <tfoot id="sales-table-foot">
+            <tr>
+                <td>Totals</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        function SalmonCookieStand(location, minCustomers, maxCustomers, avgCookiesPerSale) {
+            this.location = location;
+            this.minCustomers = minCustomers;
+            this.maxCustomers = maxCustomers;
+            this.avgCookiesPerSale = avgCookiesPerSale;
+            this.estimatedSales = [];
+        }
+
+        SalmonCookieStand.prototype.estimateSales = function () {
+            for (let i = 0; i < hours.length; i++) {
+                const numCustomers = this.generateRandomCustomers();
+                const hourlySales = Math.ceil(numCustomers * this.avgCookiesPerSale);
+                this.estimatedSales.push(hourlySales);
+            }
+        };
+
+        SalmonCookieStand.prototype.generateRandomCustomers = function () {
+            return Math.floor(Math.random() * (this.maxCustomers - this.minCustomers + 1)) + this.minCustomers;
+        };
+
+        SalmonCookieStand.prototype.render = function () {
+            const salesTableBody = document.getElementById("sales-table-body");
+            const row = document.createElement("tr");
+            row.innerHTML = `<td>${this.location}</td>`;
+            let dailyTotal = 0;
+
+            for (let i = 0; i < this.estimatedSales.length; i++) {
+                const cell = document.createElement("td");
+                cell.textContent = this.estimatedSales[i];
+                row.appendChild(cell);
+                dailyTotal += this.estimatedSales[i];
+            }
+
+            row.innerHTML += `<td>${dailyTotal}</td>`;
+            salesTableBody.appendChild(row);
+        };
+
+        const seattle = new SalmonCookieStand("Seattle", 23, 65, 6.3);
+        const tokyo = new SalmonCookieStand("Tokyo", 3, 24, 1.2);
+        const dubai = new SalmonCookieStand("Dubai", 11, 38, 3.7);
+        const paris = new SalmonCookieStand("Paris", 20, 38, 2.3);
+        const lima = new SalmonCookieStand("Lima", 2, 16, 4.6);
+
+        const stands = [seattle, tokyo, dubai, paris, lima];
+
+        for (let i = 0; i < stands.length; i++) {
+            stands[i].estimateSales();
+            stands[i].render();
+        }
+    </script>
+</body>
+</html>
