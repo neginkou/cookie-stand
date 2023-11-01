@@ -26,6 +26,7 @@ main {
 }
 .location{
     margin: 1em 0;
+    font-weight: bold;
 }
 h2 {
     font-size: 1.5em;
