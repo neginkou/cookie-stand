@@ -34,17 +34,18 @@ img {
     max-width: 100%;
     margin: 16px 0px;
     display: flex;
+
 }
-.
+
 
 header {
     border-bottom: 2px solid #111;
     position: relative;
-    overflow: hidden; /* Fix for 'overfl' typo */
+    overflow: hidden;
 }
 
 ul {
-    color: #495057; /* Added missing semicolon */
+    color: #495057;
     font-family: sans-serif;
     margin-left: 64px;
 }
@@ -65,7 +66,7 @@ footer {
 
 table {
     margin: 40px;
-    /* Removed 'align-self' as it's not typically used with 'table' */
+
 }
 
 table * {
@@ -82,19 +83,8 @@ table tfoot tr {
     background-color: grey;
 }
 
-tr:last-child {
-    /* Removed background color if not needed */
-}
-
 #tableBody td:last-of-type {
     background-color: grey;
     border-top: none;
 }
 
-#tableHead th {
-    border: none;
-}
-
-#tableFoot td {
-    /* Check if the selector matches the correct HTML structure */
-}
