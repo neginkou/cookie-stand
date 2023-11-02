@@ -1,45 +1,100 @@
-header {
-    background: black;
-    color: salmon;
-    text-align: center;
-}
 h1 {
-    font-size: 40px;
+    font-family: 'righteous', sans-serif;
+    font-size: 48px;
     font-weight: bold;
-    padding: .5em;
-}
-header nav li {
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-}
-header nav {
-    background-color: salmon;
-    padding: .25em;
-    text-align: left;
-}
-main {
-    margin: 2em;
-}
-.hero img{
-    max-width: 100%;
-}
-.location{
-    margin: 1em 0;
-    font-weight: bold;
-}
-h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: bottom 5em;;
-}
-section li { 
-    margin-left: 1.5em;
-
-}
-footer {
-    background: rgb(194, 186, 186);
-    padding: 1em;
+    font-style: italic;
+    color: salmon;
+    background-color: #111;
     text-align: center;
+    padding: 24px;
 }
 
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 32px;
+    font-family: 'righteous', sans-serif;
+}
+
+nav {
+    background-color: salmon;
+    padding: 16px;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+a {
+    color: #111;
+}
+
+img {
+    max-width: 100%;
+    margin: 16px 0px;
+    display: flex;
+}
+.
+
+header {
+    border-bottom: 2px solid #111;
+    position: relative;
+    overflow: hidden; /* Fix for 'overfl' typo */
+}
+
+ul {
+    color: #495057; /* Added missing semicolon */
+    font-family: sans-serif;
+    margin-left: 64px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+main ul li:first-child {
+    margin-top: 12px;
+}
+
+footer {
+    background-color: #cec9c9;
+    text-align: center;
+    padding: 24px;
+}
+
+table {
+    margin: 40px;
+    /* Removed 'align-self' as it's not typically used with 'table' */
+}
+
+table * {
+    border: 1px solid #111;
+    padding: 12px;
+}
+
+tbody td {
+    background-color: salmon;
+}
+
+table th,
+table tfoot tr {
+    background-color: grey;
+}
+
+tr:last-child {
+    /* Removed background color if not needed */
+}
+
+#tableBody td:last-of-type {
+    background-color: grey;
+    border-top: none;
+}
+
+#tableHead th {
+    border: none;
+}
+
+#tableFoot td {
+    /* Check if the selector matches the correct HTML structure */
+}
