@@ -2,4 +2,6 @@
 
 I have a defficulty getting my pages connected.
 
-![cookie-stand](cookie-stand/cookie-stand.png)
+I got most of the jobs done except the  bottom row.
+
+![screenshot](lighthouse.png)

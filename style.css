@@ -1,90 +1,123 @@
+
+
 h1 {
     font-family: 'righteous', sans-serif;
     font-size: 48px;
     font-weight: bold;
-    font-style: italic;
+    font-style:italic;
     color: salmon;
     background-color: #111;
     text-align: center;
     padding: 24px;
-}
-
-h2 {
+  }
+  
+  h2 {
     font-size: 32px;
     font-weight: bold;
     margin-left: 32px;
     font-family: 'righteous', sans-serif;
-}
-
-nav {
+  }
+  
+  nav {
     background-color: salmon;
     padding: 16px;
-}
-
-nav ul {
+  }
+  
+  nav ul{
     display: flex;
     gap: 32px;
-}
-
-a {
+  }
+  
+  a {
     color: #111;
-}
-
-img {
+  }
+  
+  img {
     max-width: 100%;
     margin: 16px 0px;
-    display: flex;
-
+  }
+  .hero {
+    text-align: center;
 }
-
-
-header {
+.hero {
+    border-bottom: 2px solid #000;
+}
+  
+  header {
     border-bottom: 2px solid #111;
     position: relative;
-    overflow: hidden;
-}
-
-ul {
+  }
+  
+  ul {
     color: #495057;
     font-family: sans-serif;
     margin-left: 64px;
-}
-
-ul li {
+  }
+  
+  ul li {
     margin-bottom: 12px;
-}
-
-main ul li:first-child {
+  }
+  
+  main ul li:first-child {
     margin-top: 12px;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #cec9c9;
     text-align: center;
     padding: 24px;
-}
-
-table {
-    margin: 40px;
-
-}
-
-table * {
+  }
+  
+  table {
+    margin:40px;
+    align-self:center;
+  }
+  table *{
     border: 1px solid #111;
     padding: 12px;
-}
-
-tbody td {
+  }
+  
+  tbody td {
     background-color: salmon;
-}
-
-table th,
-table tfoot tr {
+  }
+  
+  table th,
+  table tfoot tr
+  {
     background-color: grey;
-}
-
-#tableBody td:last-of-type {
+  }
+  
+  tr:last-child {
+    background: grey;
+  }
+  
+  form {
+    padding-top:24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  #tableBody td:last-of-type {
     background-color: grey;
     border-top: none;
-}
-
+  }
+  
+  #tableHead th {
+    border: none;
+  }
+  
+  #tableFoot td {
+    border: none;
+  }
+  
+  #image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tableCont {
+    display: flex;
+    justify-content: center;
+  }
+  

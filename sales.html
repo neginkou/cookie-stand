@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salmon Cookies</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title></title>
 </head>
 
 <body>
@@ -20,6 +21,14 @@
     </header>
     <main>
         <article>
+            <form id="cityForm">
+                <input name="name" placeholder="City" />
+                <input name="minCust" placeholder="Min. Customer/hour" />
+                <input name="maxCust" placeholder="Max. Customer/hour" />
+                <input name="avgCookie" placeholder="Avrage Cookie/Sale" />
+                <button type="submit">submit</button>
+            </form>
+            <div class="tablecontent"></div>
             <table>
                 <thead id="TableHead">
                     <tr id="headerRow"></tr>
@@ -41,14 +50,14 @@
                     <th>Total</th>
                     </tr>
                 </thead>
-                <tbody id="tableBody"></tbody>
+                <tbody id="tableBody">
+                </tbody>
+                <tfoot id="TableFoot"></tfoot>
             </table>
+            <div id="root"></div>
         </article>
-        <div id="root"></div>
-        <div id="total-sales"></div>
-        <tfoot id="table foot"></tfoot>
     </main>
-    <footer>&copy; 2023 Pat's Salmon Cookies</footer>
+        <footer>&copy; 2023 Pat's Salmon Cookies</footer>
     <script src="app.js"></script>
 </body>
 
