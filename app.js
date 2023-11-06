@@ -103,11 +103,9 @@ cityForm.addEventListener("submit", function (event) {
     for (let i = 0; i < inputCity.hourCookies.length; i++) {
         totals[i] + inputCity.hourCookies[i];
     }
-    tableFooter.innerHTML = ""
+    tableFooter.innerHTML = "";
+    renderTotals();
 });
-
-console.log(newCity);
-console.log(stores);
 
 seattle.cookieTime();
 tokyo.cookieTime();

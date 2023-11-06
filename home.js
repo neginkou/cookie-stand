@@ -44,7 +44,6 @@ const Lima = {
     HoursOpen: ["Hours Open 6am - 7pm", "Contact Info : 555-555-5555", "Location : Ca. Gral. Borgono cuadra 8, Miraflores 15074"],
 };
 
-// Call the renderStore function for each location
 renderStore(Seattle);
 renderStore(Tokyo);
 renderStore(Dubai);
